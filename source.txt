@@ -1,0 +1,3 @@
+https://raw.githubusercontent.com/Stinsonysm/GO_V2rayCollector/refs/heads/main/trojan_iran.txt
+
+https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/bh/mixed
