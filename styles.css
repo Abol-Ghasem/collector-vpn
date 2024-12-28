@@ -1,0 +1,151 @@
+body {
+    font-family: "Tahoma", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s, color 0.3s;
+}
+body.dark-mode {
+    background-color: #2d2d2d;
+    color: white;
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+body.dark-mode .container {
+    background-color: #333;
+    color: white;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+body.dark-mode h1 {
+    color: #fff;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 20px 15px 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+body.dark-mode li {
+    background: #444;
+}
+li span {
+    display: inline-block;
+    max-width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #555;
+}
+body.dark-mode li span {
+    color: #ddd;
+}
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+button:hover {
+    background: #0056b3;
+}
+.update-time-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    color: #777;
+    min-width: 80px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#loading-message {
+    text-align: center;
+    color: #888;
+    font-size: 1.2em;
+    margin: 50px 0;
+}
+.github-icon, .qr-icon {
+    position: absolute;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    cursor: pointer;
+}
+.github-icon {
+    right: 10px;
+    background: url('https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg') no-repeat center center;
+}
+.qr-icon {
+    right: 50px;
+    background: url('https://api.qrserver.com/v1/create-qr-code/?data=&size=50x50') no-repeat center center;
+}
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+body.dark-mode .theme-toggle {
+    background-color: #444;
+}
+.theme-toggle span {
+    font-size: 24px;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+}
+.popup img {
+    width: 300px;
+    height: 300px;
+}
+.popup .close-btn {
+    color: #000000;
+    background-color: #bdadad;
+}
